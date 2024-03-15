@@ -1,10 +1,11 @@
-function SearchBar (){
-    const handleForSubmit = () =>{
-        console.log ('need to tell parent about some data');
+function SearchBar ({onSubmit}){
+    const handleFormSubmit = (event) =>{
+        event.preventDefault();
+        onSubmit('cars');
     };
    
     return( <div> 
-        <form onSubmit={handleForSubmit}>
+        <form onSubmit={handleFormSubmit}>
 
         
         <input/>
