@@ -5,7 +5,7 @@ import { useState } from "react";
 function SearchBar ({onSubmit}){
     const [term, setTerm] = useState('');
     const handleFormSubmit = (event) =>{
-        event.preventDefault();
+        event.preventDefault();// prevent automatic reloading of forms
         // onSubmit(
         //     //  never ever ever do this
         //     // document.querySelector('input').value
