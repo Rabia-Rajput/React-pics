@@ -18,7 +18,8 @@ function SearchBar ({onSubmit}){
 
     };
    
-    return( <div> 
+    return( 
+    <div className='search-bar'> 
         <form onSubmit={handleFormSubmit}>
 
         
