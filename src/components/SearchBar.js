@@ -1,11 +1,16 @@
-function SearchBar ({onSubmit}){
-    const handleClick =()=>{
+function SearchBar (){
+    const handleForSubmit = () =>{
+        console.log ('need to tell parent about some data');
+    };
+   
+    return( <div> 
+        <form onSubmit={handleForSubmit}>
 
-    }
-    return <div> <input/>
-    <button onClick ={handleClick}>Click me </button>
+        
+        <input/>
+        </form>
          
-    </div>;
+    </div>);
 
 
     
