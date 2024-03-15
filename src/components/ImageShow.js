@@ -1,4 +1,4 @@
-function ImageShoe (){
-    return <div> ImageShow</div>
+function ImageShow ({image}){
+    return <div> {image.id}</div>
 }
 export default  ImageShow;
