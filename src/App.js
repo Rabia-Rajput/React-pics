@@ -7,7 +7,8 @@ function App (){
         searchImages(term);
        
     };
-    return <div><SearchBar onSubmit = {handleSubmit} />
+    return <div>
+        <SearchBar onSubmit = {handleSubmit} />
 
     </div>
 }
