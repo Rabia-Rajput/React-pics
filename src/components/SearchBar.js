@@ -9,10 +9,10 @@ function SearchBar ({onSubmit}){
         //     // document.querySelector('input').value
         // );
 
-        onSubmit('');
+        onSubmit(term);
     };
     const handleChange = (event) =>{
-        console.log(event.target.value);
+        setTerm(event.target.value);
 
     };
    
@@ -20,7 +20,7 @@ function SearchBar ({onSubmit}){
         <form onSubmit={handleFormSubmit}>
 
         
-        <input onChange={handleChange}/>
+        <input value={term} onChange={handleChange}/>
         </form>
          
     </div>);
